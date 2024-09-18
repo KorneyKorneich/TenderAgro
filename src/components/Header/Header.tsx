@@ -2,12 +2,16 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-white py-10 text-center">
-      <h1 className="text-4xl font-bold">Заголовок — основная суть предложения</h1>
-      <button className="mt-6 px-8 py-3 bg-blue-500 text-white rounded-lg">Button Text</button>
-      <div className="mt-10 bg-gray-200 h-64 w-3/4 mx-auto"></div>
-    </header>
+    <div className="flex justify-center">
+        <div className="w-3/4 mx-10 mt-3 flex justify-between">
+                <div className="self-center">Logo</div>
+                <div className="">
+                    <button className="px-5 py-2 bg-white text-blue-500 border-solid border-2 border-blue-500 rounded-lg">Button Text</button>
+                </div>
+        </div>
+   </div>
+
   );
 };
 
-export default Header;
+export default Header; 
