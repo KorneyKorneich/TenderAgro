@@ -1,6 +1,5 @@
 import { Button } from "@/shared/components/Button/Button";
 import HeroPic from "@shared/assets/img/flakes-in-bowl.webp";
-import React from "react";
 
 const InfoSection = () => {
   return (
