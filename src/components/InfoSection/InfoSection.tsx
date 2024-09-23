@@ -20,7 +20,7 @@ const InfoSection = () => {
         />
         <Button buttonText="Заказать" />
       </div>
-      <section className="py-16 text-center">
+      {/* <section className="py-16 text-center">
         <h2 className="text-3xl font-semibold">Заголовок</h2>
         <div className="flex justify-center mt-8 space-x-10">
           <div>
@@ -36,7 +36,7 @@ const InfoSection = () => {
             <p>Описание 3</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

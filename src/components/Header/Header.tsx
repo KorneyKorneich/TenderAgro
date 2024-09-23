@@ -8,7 +8,7 @@ const Header = () => {
         </div>
         <div className="self-center">
           <button className="px-5 py-1 bg-white text-blue-500 border-solid border-2 border-blue-500 rounded-lg">
-            Button Text
+            Заказать
           </button>
         </div>
       </div>

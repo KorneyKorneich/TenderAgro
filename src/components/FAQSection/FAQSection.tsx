@@ -8,14 +8,23 @@ const FAQSection = () => {
   };
 
   const faqs = [
-    { question: "Вопрос 1?", answer: "Ответ на вопрос 1." },
-    { question: "Вопрос 2?", answer: "Ответ на вопрос 2." },
-    { question: "Вопрос 3?", answer: "Ответ на вопрос 3." },
+    {
+      question: "В чем польза хлопьев зародышей пшеницы?",
+      answer:
+        " Хлопья зародышей пшеницы богаты витаминами B, E, минералами и клетчаткой.",
+    },
+    {
+      question: "Как часто можно их употреблять?",
+      answer:
+        "Рекомендуется употреблять хлопья ежедневно, как часть сбалансированного питания.",
+    },
   ];
 
   return (
     <section className="py-16">
-      <h2 className="text-center text-3xl font-semibold">Часто задаваемые вопросы</h2>
+      <h2 className="text-center text-3xl font-semibold">
+        Часто задаваемые вопросы
+      </h2>
       <div className="max-w-xl mx-auto mt-8">
         {faqs.map((faq, index) => (
           <div key={index} className="mb-4">
@@ -39,3 +48,4 @@ const FAQSection = () => {
 };
 
 export default FAQSection;
+
