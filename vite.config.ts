@@ -5,6 +5,7 @@ import vitePluginSvgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/TenderAgro/',
   plugins: [react(), vitePluginSvgr()],
   resolve: {
     alias: {
