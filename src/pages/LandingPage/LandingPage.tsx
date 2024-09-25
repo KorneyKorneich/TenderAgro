@@ -3,6 +3,7 @@ import FAQSection from "@/components/FAQSection/FAQSection";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import InfoSection from "@/components/InfoSection/InfoSection";
+import { QuestionForm } from "@/components/QuestionForm/QuestionForm";
 import HeroPic from "@shared/assets/img/flakes-large.webp";
 import { useNavigate } from "react-router-dom";
 
@@ -25,6 +26,7 @@ export const LandingPage = () => {
       />
       <CardSection />
       {/* <FAQSection /> */}
+      <QuestionForm />
       <Footer />
     </>
   );
