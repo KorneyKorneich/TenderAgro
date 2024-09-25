@@ -15,3 +15,4 @@ const ImageTextSection = () => {
 };
 
 export default ImageTextSection;
+
