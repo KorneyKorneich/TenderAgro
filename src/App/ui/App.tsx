@@ -1,10 +1,11 @@
-import { LandingPage } from "@/pages/LandingPage/LandingPage";
-import "../index.css";
+import "../../index.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "../providers/router/router";
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      <RouterProvider router={router} />
     </div>
   );
 }

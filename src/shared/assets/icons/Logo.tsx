@@ -4,7 +4,7 @@ export const Logo = () => {
       version="1.0"
       width="80"
       height="80"
-      viewBox="0 0 1024.000000 1024.000000"
+      viewBox="200 200 600 600"
       preserveAspectRatio="xMidYMid meet"
     >
       <g

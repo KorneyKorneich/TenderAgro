@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "flakes-in-spoon": "url('/src/shared/assets/img/flakes-large.webp')",
+        "flakes-in-bowl": "url('/src/shared/assets/img/flakes-in-bowl.webp')",
+      }
+    },
   },
   plugins: [],
 }
