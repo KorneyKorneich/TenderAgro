@@ -1,5 +1,5 @@
 import CardSection from "@/components/CardSection/CardSection";
-import FAQSection from "@/components/FAQSection/FAQSection";
+// import FAQSection from "@/components/FAQSection/FAQSection";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import InfoSection from "@/components/InfoSection/InfoSection";
@@ -19,7 +19,7 @@ export const LandingPage = () => {
       <Header buttonHandle={toProductsHandler} buttonTitle="К продуктам" />
       <InfoSection
         h1Text="Tender Agro — натуральные продукты для здоровья и силы"
-        pText="Tender Agro — компания, ориентированная на производство и продажу натуральных сельскохозяйственных продуктов.  Мы верим, что лучшее питание — это то, что даёт нам природа, и наш продукт — идеальный выбор для всех, кто заботится о своём благополучии."
+        pText="Tender Agro — компания, ориентированная на производство и продажу натуральных сельскохозяйственных продуктов.  Мы верим, лучшее питание — это то, что даёт нам природа. Наш продукт — идеальный выбор для всех, кто заботится о своём благополучии."
         img={HeroPic}
         buttonText="К продуктам"
         buttonHandler={toProductsHandler}

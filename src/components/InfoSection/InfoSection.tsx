@@ -16,7 +16,7 @@ const InfoSection = ({
 }: InfoSectionProps) => {
   return (
     <>
-      <div className="relative mb-7 bg-white py-10 text-center bg-flakes-in-bowl">
+      <div className="relative mb-7 bg-white py-10 text-center bg-flakes-in-bowl bg-no-repeat">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10">
           <h1 className="w-3/4 mx-auto text-4xl font-bold text-white">

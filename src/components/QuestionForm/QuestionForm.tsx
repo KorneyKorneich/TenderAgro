@@ -11,17 +11,15 @@ type Inputs = {
 
 export const QuestionForm = () => {
   const {
-    register,
     handleSubmit,
-    watch,
     control,
-    formState: { errors },
+    // formState: { errors },
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
   return (
-    <div className="w-3/4 mx-auto my-5">
+    <div className="w-2/4 mx-auto my-5">
       <div className="flex justify-center flex-col">
         <h2 className="text-3xl font-semibold text-center mb-2">
           Остались вопросы?

@@ -1,5 +1,3 @@
-import React from "react";
-
 const ImageTextSection = () => {
   return (
     <section className="py-16">
