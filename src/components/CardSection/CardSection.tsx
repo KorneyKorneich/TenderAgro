@@ -25,10 +25,10 @@ const CardSection = () => {
         Почему стоит выбрать нас?
       </h2>
       <section className="py-8">
-        <div className="flex">
+        <div className="flex justify-center">
           {/* Назад */}
           <div
-            className="p-10 w-1/4 text-center cursor-pointer content-center rotate-180"
+            className="p-10 text-center cursor-pointer content-center rotate-180 transition-transform transform hover:scale-110"
             onClick={() => handleCardChange("back")}
           >
             <Arrow height="30px" width="30px" />
@@ -47,11 +47,20 @@ const CardSection = () => {
 
           {/* Вперед */}
           <div
-            className="p-10 w-1/4 text-center cursor-pointer content-center"
+            className="p-10 text-center cursor-pointer content-center transition-transform transform hover:scale-110"
             onClick={() => handleCardChange("forward")}
           >
             <Arrow height="30px" width="30px" />
           </div>
+        </div>
+        <div className="flex gap-2 justify-center mt-5">
+          {cardsData.map((_, index) => {
+            if (currentIndex === index) {
+              return <div className="p-1 bg-blue-500 rounded-full"></div>;
+            } else {
+              return <div className="p-1 bg-gray-300 rounded-full"></div>;
+            }
+          })}
         </div>
       </section>
     </>
