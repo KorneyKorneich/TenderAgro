@@ -1,5 +1,5 @@
-import { Arrow } from "@/shared/assets/icons/arrow";
-import { cardsData } from "@/shared/assets/info/cardsInfo";
+import { Arrow } from "@/shared/assets/icons/Arrow";
+import { cardsData } from "@shared/assets/info/cardsInfo";
 import { useState } from "react";
 
 const CardSection = () => {
