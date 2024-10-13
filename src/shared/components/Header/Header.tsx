@@ -9,7 +9,7 @@ interface HeaderProps {
 
 const Header = ({ buttonTitle, buttonHandle }: HeaderProps) => {
   const navigate = useNavigate();
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation(["common"]);
 
   const handleToHome = () => {
     navigate("/");
@@ -27,7 +27,6 @@ const Header = ({ buttonTitle, buttonHandle }: HeaderProps) => {
           <Logo />
         </div>
         <div className="self-center">
-          {/* Кнопка */}
           <button
             className="px-5 py-1 bg-white text-blue-500 border-solid border-2 border-blue-500 rounded-lg"
             onClick={buttonHandle}
@@ -35,15 +34,14 @@ const Header = ({ buttonTitle, buttonHandle }: HeaderProps) => {
             {buttonTitle}
           </button>
 
-          {/* Выпадающий список для выбора языка */}
           <select
             className="ml-4 px-3 py-1 bg-white text-blue-500 border-solid border-2 border-blue-500 rounded-lg"
             onChange={handleChangeLang}
-            defaultValue={i18n.language} // Устанавливаем начальное значение
+            defaultValue={i18n.language}
           >
-            <option value="ru">Русский</option>
-            <option value="by">Белорусский</option>
-            <option value="zh">Китайский</option>
+            <option value="ru">{t("common.languages.ru")}</option>
+            <option value="by">{t("common.languages.by")}</option>
+            <option value="zh">{t("common.languages.zh")}</option>
           </select>
         </div>
       </div>

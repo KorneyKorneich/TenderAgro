@@ -1,6 +1,7 @@
 import { Button } from "@/shared/components/Button/Button";
 import { Input } from "@/shared/components/Input/Input";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 type Inputs = {
   name: string;
@@ -10,6 +11,7 @@ type Inputs = {
 };
 
 export const QuestionForm = () => {
+  const { t } = useTranslation(["common"]);
   const {
     handleSubmit,
     control,
@@ -22,13 +24,18 @@ export const QuestionForm = () => {
     <div className="w-2/4 mx-auto my-5">
       <div className="flex justify-center flex-col">
         <h2 className="text-3xl font-semibold text-center mb-2">
-          Остались вопросы?
+          {t("common.questionForm.title")}
         </h2>
         <form className="flex flex-col gap-2" onSubmit={handleSubmit(onSubmit)}>
           <Controller
             name="name"
             control={control}
-            render={({ field }) => <Input placeholder="Имя" {...field} />}
+            render={({ field }) => (
+              <Input
+                placeholder={t("common.questionForm.placeholders.name")}
+                {...field}
+              />
+            )}
           />
           <Controller
             name="email"
@@ -39,17 +46,25 @@ export const QuestionForm = () => {
             name="topic"
             control={control}
             render={({ field }) => (
-              <Input placeholder="Тема сообщения" {...field} />
+              <Input
+                placeholder={t("common.questionForm.placeholders.messageTheme")}
+                {...field}
+              />
             )}
           />
           <Controller
             name="msg"
             control={control}
-            render={({ field }) => <Input placeholder="Сообщение" {...field} />}
+            render={({ field }) => (
+              <Input
+                placeholder={t("common.questionForm.placeholders.message")}
+                {...field}
+              />
+            )}
           />
           <div className="flex justify-center">
             <Button
-              buttonText="Отправить"
+              buttonText={t("common.buttons.send")}
               buttonHandler={handleSubmit(onSubmit)}
             />
           </div>

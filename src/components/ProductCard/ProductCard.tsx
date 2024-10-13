@@ -4,7 +4,7 @@ import { ProductInfo } from "../ProductInfo/ProductInfo";
 import { useTranslation } from "react-i18next";
 
 export const ProductCard = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["flakes", "common"]);
   const handleBuy = () => {};
   return (
     <>
@@ -18,11 +18,11 @@ export const ProductCard = () => {
               {t("flakesInfoPage.productName")}
             </h1>
             <p className="text-2xl"> price$$$</p>
-            <p className="">
-              Зародыши пшеницы богаты витаминами, минералами, ненасыщенными
-              жирными кислотами и белками.
-            </p>
-            <Button buttonText="Купить" buttonHandler={handleBuy} />
+            <p className="">{t("flakesInfoPage.productShortDescription")}</p>
+            <Button
+              buttonText={t("common.buttons.buy")}
+              buttonHandler={handleBuy}
+            />
           </div>
         </div>
       </div>

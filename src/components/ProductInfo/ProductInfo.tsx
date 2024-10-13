@@ -1,13 +1,43 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { SectionHeader } from "../SectionHeader/SectionHeader";
+import { ElementsList, NutrientElement } from "../ElemetsList/ElementsList";
+import { NutritionTable } from "../NutritionTable/NutritionTable";
 
 export const ProductInfo = () => {
-  const { t, i18n } = useTranslation(["flakes"]);
-  const [isDescription, setIsDescription] = useState<boolean>(true);
-  console.log(t("productInfo.productDescription"));
+  const { t } = useTranslation(["flakes"]);
+  const [isDescription, setIsDescription] = useState(true);
+
+  const nutritionData = {
+    calories: t("flakesInfoPage.additionalInfo.nutritionFacts.calories"),
+    protein: t("flakesInfoPage.additionalInfo.nutritionFacts.protein"),
+    fat: t("flakesInfoPage.additionalInfo.nutritionFacts.fat"),
+    carbohydrates: t(
+      "flakesInfoPage.additionalInfo.nutritionFacts.carbohydrates"
+    ),
+    fiber: t("flakesInfoPage.additionalInfo.nutritionFacts.fiber"),
+    caloriesValue: t(
+      "flakesInfoPage.additionalInfo.nutritionFacts.caloriesValue"
+    ),
+    proteinValue: t(
+      "flakesInfoPage.additionalInfo.nutritionFacts.proteinValue"
+    ),
+    fatValue: t("flakesInfoPage.additionalInfo.nutritionFacts.fatValue"),
+    carbohydratesValue: t(
+      "flakesInfoPage.additionalInfo.nutritionFacts.carbohydratesValue"
+    ),
+    fiberValue: t("flakesInfoPage.additionalInfo.nutritionFacts.fiberValue"),
+  };
+
+  const elementsData: NutrientElement[] = t(
+    "flakesInfoPage.additionalInfo.elements",
+    {
+      returnObjects: true,
+    }
+  ) as NutrientElement[];
+
   return (
     <div className="w-3/4 mx-auto p-4">
-      {/* Заголовок с кнопками переключения */}
       <div className="pb-4 flex justify-evenly border-b-2 border-blue-500">
         <div
           className={`cursor-pointer ${
@@ -15,7 +45,7 @@ export const ProductInfo = () => {
           }`}
           onClick={() => setIsDescription(true)}
         >
-          Описание
+          {t("flakesInfoPage.articleOptionDescription")}
         </div>
         <div
           className={`cursor-pointer ${
@@ -23,73 +53,26 @@ export const ProductInfo = () => {
           }`}
           onClick={() => setIsDescription(false)}
         >
-          Дополнительная информация
+          {t("flakesInfoPage.articleOptionAdditionalInfo")}
         </div>
       </div>
 
       <div className="pt-6 text-gray-800 leading-relaxed">
         {isDescription ? (
           <div>
-            <h2 className="text-2xl font-semibold mb-4">Описание продукта</h2>
+            <SectionHeader
+              title={t("flakesInfoPage.productDescrioptionTitle")}
+            />
             <p>{t("flakesInfoPage.productDescription")}</p>
           </div>
         ) : (
           <div>
-            <h2 className="text-2xl font-semibold mb-4">
-              Пищевая ценность и состав
-            </h2>
-
-            {/* Таблица пищевой ценности */}
-            <table className="table-auto border-collapse w-full mb-4">
-              <thead>
-                <tr>
-                  <th className="border px-4 py-2">Показатель</th>
-                  <th className="border px-4 py-2">Значение</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border px-4 py-2">Калорийность</td>
-                  <td className="border px-4 py-2">
-                    {ProductInfoTxt.additionalInfo.nutritionFacts.calories}
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Белки</td>
-                  <td className="border px-4 py-2">
-                    {ProductInfoTxt.additionalInfo.nutritionFacts.protein}
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Жиры</td>
-                  <td className="border px-4 py-2">
-                    {ProductInfoTxt.additionalInfo.nutritionFacts.fat}
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Углеводы</td>
-                  <td className="border px-4 py-2">
-                    {ProductInfoTxt.additionalInfo.nutritionFacts.carbohydrates}
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border px-4 py-2">Клетчатка</td>
-                  <td className="border px-4 py-2">
-                    {ProductInfoTxt.additionalInfo.nutritionFacts.fiber}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            {/* Состав элементов */}
-            <h3 className="text-xl font-semibold mb-2">Состав элементов</h3>
-            <ul className="list-disc pl-5">
-              {ProductInfoTxt.additionalInfo.elements.map((element, index) => (
-                <li key={index} className="mb-1">
-                  {element.name}: {element.amount}
-                </li>
-              ))}
-            </ul>
+            <SectionHeader title={t("flakesInfoPage.nutritionTableTitle")} />
+            <NutritionTable nutrition={nutritionData} />
+            <h3 className="text-xl font-semibold mb-2">
+              {t("flakesInfoPage.elementsTitle")}
+            </h3>
+            <ElementsList elements={elementsData} />
           </div>
         )}
       </div>
