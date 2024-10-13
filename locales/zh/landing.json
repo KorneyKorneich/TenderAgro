@@ -1,0 +1,33 @@
+{
+  "landingPage": {
+      "heroSection": {
+          "title": "Tender Agro — 自然健康和力量的产品",
+          "mainText": "Tender Agro — 家专注于生产和销售天然农产品的公司。我们相信，最好的饮食来自大自然。我们的产品是所有关注自身健康的人的理想选择。"
+      },
+      "cardSection": {
+          "title": "为什么选择我们？",
+          "cards": [
+              {
+                  "cardTitle": "环保",
+                  "cardText": "我们的产品由有机原料制成，不添加化学品。"
+              },
+              {
+                  "cardTitle": "健康益处",
+                  "cardText": "含有大量维生素和矿物质。"
+              },
+              {
+                  "cardTitle": "天然口味",
+                  "cardText": "没有人工添加剂，只有纯粹的自然味道。"
+              },
+              {
+                  "cardTitle": "易于烹饪",
+                  "cardText": "快速烹饪，适合任何饮食。"
+              },
+              {
+                  "cardTitle": "储备",
+                  "cardText": "储备"
+              }
+          ]
+      }
+  }
+}

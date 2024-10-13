@@ -1,0 +1,43 @@
+{
+    "flakesInfoPage": {
+        "productName": "小麦胚芽片",
+        "productShortDescription": "小麦胚芽富含维生素、矿物质、不饱和脂肪酸和蛋白质。",
+        "productDescrioptionTitle": "产品描述",
+        "productDescription": "如何食用小麦胚芽？如果您想食用干燥的小麦胚芽，建议定期将它们添加到早餐麦片、汤或素食酱中。小麦胚芽也是奶昔或饮料中的美味成分。您也可以将它们撒在米饭、土豆、蔬菜或沙拉上。小麦胚芽在烘焙中赋予面包或糕点独特的风味。为了不失去宝贵的营养成分，我们建议不要烹饪或加热小麦胚芽，尽管严格来说，小麦胚芽不被视为生食。食品工业使用小麦胚芽或小麦胚芽粉代替麦片、运动棒或巧克力棒中的坚果。作为烘焙原料，小麦胚芽粉改善了其粘合性能，因为它可以吸收液体，因此产品可以保持更长时间的新鲜。这意味着您可以避免在冰淇淋、巧克力酱或其他有机糖果中使用人工增稠剂。小麦胚芽粉改善了即食汤或酱汁的味道和质地。通过小麦胚芽还可以增加肉类替代品中的蛋白质含量。",
+        "articleOptionDescription": "描述",
+        "articleOptionAdditionalInfo": "附加信息",
+        "nutritionTableTitle": "营养价值表",
+        "elementsTitle": "元素组成",
+        "additionalInfo": {
+            "nutritionFacts": {
+                "calories": "热量",
+                "protein": "蛋白质",
+                "fat": "脂肪",
+                "carbohydrates": "碳水化合物",
+                "fiber": "纤维",
+                "caloriesValue": "294 千卡",
+                "proteinValue": "33.8 克",
+                "fatValue": "8 克",
+                "carbohydratesValue": "47 克",
+                "fiberValue": "0.47 毫克"
+            },
+            "elements": [
+                { "name": "铁", "amount": "8 毫克" },
+                { "name": "镁", "amount": "38 毫克" },
+                { "name": "磷", "amount": "1320 毫克" },
+                { "name": "锌", "amount": "20 毫克" }
+            ]
+        },
+        "mostAskedQuestions": "常见问题",
+        "questions": [
+            {
+                "question": "小麦胚芽片有哪些好处？",
+                "answer": "小麦胚芽片富含维生素B、E、矿物质和纤维。"
+            },
+            {
+                "question": "多久可以食用一次？",
+                "answer": "建议每天食用小麦胚芽片，作为均衡饮食的一部分。"
+            }
+        ]
+    }
+}
