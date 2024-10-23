@@ -1,5 +1,4 @@
 import CardSection from "@/components/CardSection/CardSection";
-// import FAQSection from "@/components/FAQSection/FAQSection";
 import Footer from "@/shared/components/Footer/Footer";
 import Header from "@/shared/components/Header/Header";
 import InfoSection from "@/components/InfoSection/InfoSection";

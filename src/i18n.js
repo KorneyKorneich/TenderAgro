@@ -10,15 +10,15 @@ i18n
   .init({
     fallbackLng: "ru",
     backend: {
-      // Путь к файлам перевода с использованием пространства имен
+
       loadPath: '/TenderAgro/locales/{{lng}}/{{ns}}.json',  
     },
     interpolation: {
-      escapeValue: false, // React уже защищает от XSS
+      escapeValue: false, 
     },
-    ns: ["flakes", "common"], // Указываем пространства имен, которые будут использоваться
-    defaultNS: "common", // Пространство имен по умолчанию
-    fallbackNS: "common", // В случае, если перевод в основном пространстве не найден
+    ns: ["flakes", "common"], 
+    defaultNS: "common",
+    fallbackNS: "common", 
   });
 
 export default i18n; 

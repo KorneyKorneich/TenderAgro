@@ -12,18 +12,12 @@ type Inputs = {
 
 export const QuestionForm = () => {
   const { t } = useTranslation(["common"]);
-  const {
-    handleSubmit,
-    control,
-    // formState: { errors },
-  } = useForm<Inputs>();
+  const { handleSubmit, control } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
   return (
     <div className="w-full md:w-2/4 lg:w-1/4 mx-auto my-5">
-      {" "}
-      {/* Изменение ширины в зависимости от разрешения экрана */}
       <div className="flex justify-center flex-col">
         <h2 className="text-3xl font-semibold text-center mb-2">
           {t("common.questionForm.title")}
@@ -75,3 +69,4 @@ export const QuestionForm = () => {
     </div>
   );
 };
+
