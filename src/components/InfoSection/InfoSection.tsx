@@ -21,8 +21,8 @@ const InfoSection = ({
         className="relative mb-7 text-center bg-no-repeat bg-cover bg-center min-h-[400px] lg:min-h-[500px] xl:min-h-[600px] flex items-center justify-center"
         style={{ backgroundImage: `url(${img})` }} // устанавливаем фоновое изображение
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 w-3/4 mx-auto text-white flex flex-col items-center">
+        <div className="absolute inset-0  bg-black opacity-50"></div>
+        <div className="relative  z-10 w-3/4 mx-auto my-4 md:my-0 text-white flex flex-col items-center">
           <h1 className="text-4xl font-bold">{h1Text}</h1>
           <p className="mt-2 text-xl">{pText}</p>
           <Button

@@ -21,21 +21,27 @@ const Header = ({ buttonTitle, buttonHandle }: HeaderProps) => {
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="w-3/4 mx-10 flex justify-between">
-        <div className="self-center cursor-pointer" onClick={handleToHome}>
+    <header className="w-full px-4 py-3">
+      {" "}
+      {/* Добавлен фон и тень */}
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+        {/* Логотип */}
+        <div className="cursor-pointer mb-4 sm:mb-0" onClick={handleToHome}>
           <Logo />
         </div>
-        <div className="self-center">
+
+        {/* Блок с кнопками */}
+        <div className="flex flex-col sm:flex-row items-center gap-4">
+          {" "}
+          {/* gap-4 для равного расстояния */}
           <button
-            className="px-5 py-1 bg-white text-blue-500 border-solid border-2 border-blue-500 rounded-lg"
+            className="px-5 py-2 bg-blue-500 text-white border border-blue-500 rounded-lg hover:bg-blue-600 transition duration-200"
             onClick={buttonHandle}
           >
             {buttonTitle}
           </button>
-
           <select
-            className="ml-4 px-3 py-1 bg-white text-blue-500 border-solid border-2 border-blue-500 rounded-lg"
+            className="px-4 py-2 bg-white text-blue-500 border border-blue-500 rounded-lg focus:outline-none hover:bg-gray-100 transition duration-200"
             onChange={handleChangeLang}
             defaultValue={i18n.language}
           >
@@ -45,7 +51,7 @@ const Header = ({ buttonTitle, buttonHandle }: HeaderProps) => {
           </select>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

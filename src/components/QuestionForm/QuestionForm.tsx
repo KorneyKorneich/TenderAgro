@@ -21,7 +21,9 @@ export const QuestionForm = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
   return (
-    <div className="w-2/4 mx-auto my-5">
+    <div className="w-full md:w-2/4 lg:w-1/4 mx-auto my-5">
+      {" "}
+      {/* Изменение ширины в зависимости от разрешения экрана */}
       <div className="flex justify-center flex-col">
         <h2 className="text-3xl font-semibold text-center mb-2">
           {t("common.questionForm.title")}
@@ -73,4 +75,3 @@ export const QuestionForm = () => {
     </div>
   );
 };
-
