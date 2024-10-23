@@ -1,29 +1,27 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
+interface Faq {
+  question: string;
+  answer: string;
+}
 
 const FAQSection = () => {
+  const { t } = useTranslation(["flakes"]);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number | null) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const faqs = [
-    {
-      question: "В чем польза хлопьев зародышей пшеницы?",
-      answer:
-        " Хлопья зародышей пшеницы богаты витаминами B, E, минералами и клетчаткой.",
-    },
-    {
-      question: "Как часто можно их употреблять?",
-      answer:
-        "Рекомендуется употреблять хлопья ежедневно, как часть сбалансированного питания.",
-    },
-  ];
+  const faqs = t("flakesInfoPage.questions", {
+    returnObjects: true,
+  }) as Faq[];
 
   return (
     <section className="py-16">
       <h2 className="text-center text-3xl font-semibold">
-        Часто задаваемые вопросы
+        {t("flakesInfoPage.mostAskedQuestions")}
       </h2>
       <div className="max-w-xl mx-auto mt-8">
         {faqs.map((faq, index) => (

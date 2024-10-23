@@ -1,0 +1,33 @@
+{
+    "landingPage": {
+        "heroSection": {
+            "title": "“Tender Agro” 私营企业 — 大自然赐予，人类采撷，我们为所有人保存！",
+            "mainText": "天然的农业食品，经过合理选择和妥善保存，为您的健康、长寿和幸福保驾护航！大自然的秘密人人皆可触及，帮助改善饮食，恢复体力，预防多种疾病。"
+        },
+        "cardSection": {
+            "title": "为什么选择我们？",
+            "cards": [
+                {
+                    "cardTitle": "环保性",
+                    "cardText": "我们的产品使用有机原料生产，不添加任何化学物质。"
+                },
+                {
+                    "cardTitle": "有益健康",
+                    "cardText": "富含大量维生素和矿物质。"
+                },
+                {
+                    "cardTitle": "天然风味",
+                    "cardText": "不含人工添加剂，只保留纯正的自然味道。"
+                },
+                {
+                    "cardTitle": "烹饪简便",
+                    "cardText": "烹饪方便，适合任何饮食结构。"
+                },
+                {
+                    "cardTitle": "储备",
+                    "cardText": "储备"
+                }
+            ]
+        }
+    }
+}

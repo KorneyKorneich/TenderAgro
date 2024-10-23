@@ -1,0 +1,23 @@
+{
+    "common": {
+        "buttons": {
+            "buy": "Купіць",
+            "order": "Замовіць",
+            "toProducts": "Да прадуктаў",
+            "send": "Адправіць"
+        },
+        "languages": {
+            "ru": "Руская",
+            "by": "Беларуская",
+            "zh": "Кітайская"
+        },
+        "questionForm": {
+            "title": "Засталіся пытанні?",
+            "placeholders": {
+                "name": "Імя",
+                "messageTheme": "Тэма паведамлення",
+                "message": "Паведамленне"
+            }
+        }
+    }
+}

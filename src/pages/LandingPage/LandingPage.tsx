@@ -1,13 +1,15 @@
 import CardSection from "@/components/CardSection/CardSection";
 // import FAQSection from "@/components/FAQSection/FAQSection";
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
+import Footer from "@/shared/components/Footer/Footer";
+import Header from "@/shared/components/Header/Header";
 import InfoSection from "@/components/InfoSection/InfoSection";
 import { QuestionForm } from "@/components/QuestionForm/QuestionForm";
 import HeroPic from "@shared/assets/img/flakes-large.webp";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const LandingPage = () => {
+  const { t } = useTranslation(["landing", "common"]);
   const navigate = useNavigate();
 
   const toProductsHandler = () => {
@@ -16,16 +18,18 @@ export const LandingPage = () => {
 
   return (
     <>
-      <Header buttonHandle={toProductsHandler} buttonTitle="К продуктам" />
+      <Header
+        buttonHandle={toProductsHandler}
+        buttonTitle={t("common.buttons.toProducts")}
+      />
       <InfoSection
-        h1Text="Tender Agro — натуральные продукты для здоровья и силы"
-        pText="Tender Agro — компания, ориентированная на производство и продажу натуральных сельскохозяйственных продуктов.  Мы верим, лучшее питание — это то, что даёт нам природа. Наш продукт — идеальный выбор для всех, кто заботится о своём благополучии."
+        h1Text={t("landingPage.heroSection.title")}
+        pText={t("landingPage.heroSection.mainText")}
         img={HeroPic}
-        buttonText="К продуктам"
+        buttonText={t("common.buttons.toProducts")}
         buttonHandler={toProductsHandler}
       />
       <CardSection />
-      {/* <FAQSection /> */}
       <QuestionForm />
       <Footer />
     </>
