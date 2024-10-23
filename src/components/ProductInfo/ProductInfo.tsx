@@ -37,10 +37,10 @@ export const ProductInfo = () => {
   ) as NutrientElement[];
 
   return (
-    <div className="w-3/4 mx-auto p-4">
-      <div className="pb-4 flex justify-evenly border-b-2 border-blue-500">
+    <div className="w-full max-w-screen-md mx-auto p-4">
+      <div className="pb-4 flex flex-col md:flex-row justify-evenly border-b-2 border-blue-500">
         <div
-          className={`cursor-pointer ${
+          className={`cursor-pointer py-2 mx-2 text-center ${
             isDescription ? "font-bold text-blue-500" : "text-gray-500"
           }`}
           onClick={() => setIsDescription(true)}
@@ -48,7 +48,7 @@ export const ProductInfo = () => {
           {t("flakesInfoPage.articleOptionDescription")}
         </div>
         <div
-          className={`cursor-pointer ${
+          className={`cursor-pointer py-2 mx-2 text-center ${
             !isDescription ? "font-bold text-blue-500" : "text-gray-500"
           }`}
           onClick={() => setIsDescription(false)}
@@ -79,4 +79,3 @@ export const ProductInfo = () => {
     </div>
   );
 };
-

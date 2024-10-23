@@ -30,30 +30,32 @@ const CardSection = () => {
         {t("landingPage.cardSection.title")}
       </h2>
       <section className="py-8">
-        <div className="flex justify-center">
-          <div
-            className="p-10 text-center cursor-pointer content-center rotate-180 transition-transform transform hover:scale-110"
-            onClick={() => handleCardChange("back")}
-          >
-            <Arrow height="30px" width="30px" />
-          </div>
-
-          <div className="flex w-1/2 flex-col md:flex-row items-center justify-center md:gap-10">
-            <div className="bg-gray-200 h-64 w-64 mb-6 md:mb-0"></div>
-            <div className="w-2/3 text-center md:text-left">
-              <h2 className="text-2xl font-semibold">
-                {cardsData[currentIndex]?.cardTitle}
-              </h2>
-              <p className="mt-4">{cardsData[currentIndex]?.cardText}</p>
+        <div className="flex justify-center ">
+          <div className="flex justify-center w-full xl:w-1/2">
+            <div
+              className="p-10 text-center cursor-pointer content-center rotate-180 transition-transform transform hover:scale-110"
+              onClick={() => handleCardChange("back")}
+            >
+              <Arrow height="30px" width="30px" />
             </div>
-          </div>
 
-          {/* Вперед */}
-          <div
-            className="p-10 text-center cursor-pointer content-center transition-transform transform hover:scale-110"
-            onClick={() => handleCardChange("forward")}
-          >
-            <Arrow height="30px" width="30px" />
+            <div className="flex w-1/2 flex-col md:flex-row items-center justify-center md:gap-10">
+              <div className="bg-gray-200 h-64 w-64 mb-6 md:mb-0"></div>
+              <div className="w-2/3 text-center md:text-left">
+                <h2 className="text-2xl font-semibold">
+                  {cardsData[currentIndex]?.cardTitle}
+                </h2>
+                <p className="mt-4">{cardsData[currentIndex]?.cardText}</p>
+              </div>
+            </div>
+
+            {/* Вперед */}
+            <div
+              className="p-10 text-center cursor-pointer content-center transition-transform transform hover:scale-110"
+              onClick={() => handleCardChange("forward")}
+            >
+              <Arrow height="30px" width="30px" />
+            </div>
           </div>
         </div>
         <div className="flex gap-2 justify-center mt-5">

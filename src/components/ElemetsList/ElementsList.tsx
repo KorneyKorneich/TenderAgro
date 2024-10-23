@@ -1,4 +1,3 @@
-// Renaming the custom Element type to NutrientElement
 export type NutrientElement = {
   name: string;
   amount: string;
