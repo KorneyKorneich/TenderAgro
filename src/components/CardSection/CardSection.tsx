@@ -33,15 +33,15 @@ const CardSection = () => {
         <div className="flex justify-center ">
           <div className="flex justify-center w-full xl:w-1/2">
             <div
-              className="p-10 text-center cursor-pointer content-center rotate-180 transition-transform transform hover:scale-110"
+              className="p-1 sm:p-10 text-center cursor-pointer content-center rotate-180 transition-transform transform hover:scale-110"
               onClick={() => handleCardChange("back")}
             >
               <Arrow height="30px" width="30px" />
             </div>
 
             <div className="flex w-1/2 flex-col md:flex-row items-center justify-center md:gap-10">
-              <div className="bg-gray-200 h-64 w-64 mb-6 md:mb-0"></div>
-              <div className="w-2/3 text-center md:text-left">
+              <div className="bg-gray-200 h-64 w-full mb-6 md:mb-0"></div>
+              <div className="w-full sm:w-2/3 text-center md:text-left">
                 <h2 className="text-2xl font-semibold">
                   {cardsData[currentIndex]?.cardTitle}
                 </h2>
@@ -51,7 +51,7 @@ const CardSection = () => {
 
             {/* Вперед */}
             <div
-              className="p-10 text-center cursor-pointer content-center transition-transform transform hover:scale-110"
+              className="p-1 sm:p-10 text-center cursor-pointer content-center transition-transform transform hover:scale-110"
               onClick={() => handleCardChange("forward")}
             >
               <Arrow height="30px" width="30px" />
