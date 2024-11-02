@@ -24,7 +24,7 @@ const Header = ({ buttonTitle, buttonHandle }: HeaderProps) => {
     <header className="w-full px-4 py-3">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-around items-center">
         <div className="cursor-pointer mb-4 sm:mb-0" onClick={handleToHome}>
-          <img className="w-1/3" src={Logo} />
+          <img className="w-1/3 mx-auto sm:mx-0 " src={Logo} />
         </div>
 
         <div className="flex flex-col sm:flex-row items-center gap-4">
