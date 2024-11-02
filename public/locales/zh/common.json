@@ -1,23 +1,24 @@
 {
     "common": {
-        "buttons": {
-            "buy": "购买",
-            "order": "订购",
-            "toProducts": "查看产品",
-            "send": "发送"
-        },
-        "languages": {
-            "ru": "俄语",
-            "by": "白俄罗斯语",
-            "zh": "中文"
-        },
-        "questionForm": {
-            "title": "还有问题吗？",
-            "placeholders": {
-                "name": "姓名",
-                "messageTheme": "消息主题",
-                "message": "消息"
-            }
+      "buttons": {
+        "buy": "购买",
+        "order": "下单",
+        "toProducts": "前往产品",
+        "send": "发送",
+        "close": "关闭"
+      },
+      "languages": {
+        "ru": "俄语",
+        "by": "白俄罗斯语",
+        "zh": "中文"
+      },
+      "questionForm": {
+        "title": "还有问题吗？",
+        "placeholders": {
+          "name": "姓名",
+          "messageTheme": "消息主题",
+          "message": "消息"
         }
+      }
     }
-}
+  }

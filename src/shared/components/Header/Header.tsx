@@ -1,4 +1,4 @@
-import { Logo } from "@shared/assets/icons/Logo";
+import Logo from "@/shared/assets/icons/Logo.png";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
@@ -22,18 +22,12 @@ const Header = ({ buttonTitle, buttonHandle }: HeaderProps) => {
 
   return (
     <header className="w-full px-4 py-3">
-      {" "}
-      {/* Добавлен фон и тень */}
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
-        {/* Логотип */}
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-around items-center">
         <div className="cursor-pointer mb-4 sm:mb-0" onClick={handleToHome}>
-          <Logo />
+          <img className="w-1/3" src={Logo} />
         </div>
 
-        {/* Блок с кнопками */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
-          {" "}
-          {/* gap-4 для равного расстояния */}
           <button
             className="px-5 py-2 bg-blue-500 text-white border border-blue-500 rounded-lg hover:bg-blue-600 transition duration-200"
             onClick={buttonHandle}

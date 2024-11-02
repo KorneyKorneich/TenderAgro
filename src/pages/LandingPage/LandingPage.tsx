@@ -6,6 +6,8 @@ import { QuestionForm } from "@/components/QuestionForm/QuestionForm";
 import HeroPic from "@shared/assets/img/flakes-large.webp";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Suspense } from "react";
+import Loader from "@/shared/components/Loader/Loader";
 
 export const LandingPage = () => {
   const { t } = useTranslation(["landing", "common"]);
@@ -16,7 +18,7 @@ export const LandingPage = () => {
   };
 
   return (
-    <>
+    <Suspense fallback={<Loader />}>
       <Header
         buttonHandle={toProductsHandler}
         buttonTitle={t("common.buttons.toProducts")}
@@ -31,7 +33,7 @@ export const LandingPage = () => {
       <CardSection />
       <QuestionForm />
       <Footer />
-    </>
+    </Suspense>
   );
 };
 
