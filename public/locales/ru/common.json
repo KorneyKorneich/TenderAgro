@@ -14,11 +14,8 @@
         },
         "questionForm": {
             "title" : "Остались вопросы?",
-            "placeholders":{
-                "name": "Имя",
-                "messageTheme": "Тема сообщения",
-                "message": "Сообщение"
-            }
+            "text": "Вы можете задать их ",
+            "link": "здесь"
         }
     }
 }
