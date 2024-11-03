@@ -3,11 +3,17 @@ import HeroPic from "@shared/assets/img/flakes-large.webp";
 import { ProductInfo } from "../ProductInfo/ProductInfo";
 import { useTranslation } from "react-i18next";
 import Modal from "@/shared/components/Modal/Modal";
-import { useState } from "react";
 
-export const ProductCard = () => {
+interface ProductCardProps {
+  isModalOpen: boolean;
+  setIsModalOpen: (modalState: boolean) => void;
+}
+
+export const ProductCard = ({
+  isModalOpen,
+  setIsModalOpen,
+}: ProductCardProps) => {
   const { t } = useTranslation(["flakes", "common"]);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const handleBuy = () => {
     setIsModalOpen(true);
   };
