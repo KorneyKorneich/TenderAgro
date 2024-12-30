@@ -1,33 +1,38 @@
 {
     "landingPage": {
-        "heroSection": {
-            "title": "“Tender Agro” 私营企业 — 大自然赐予，人类采撷，我们为所有人保存！",
-            "mainText": "天然的农业食品，经过合理选择和妥善保存，为您的健康、长寿和幸福保驾护航！大自然的秘密人人皆可触及，帮助改善饮食，恢复体力，预防多种疾病。"
-        },
-        "cardSection": {
-            "title": "为什么选择我们？",
-            "cards": [
-                {
-                    "cardTitle": "环保性",
-                    "cardText": "我们的产品使用有机原料生产，不添加任何化学物质。"
-                },
-                {
-                    "cardTitle": "有益健康",
-                    "cardText": "富含大量维生素和矿物质。"
-                },
-                {
-                    "cardTitle": "天然风味",
-                    "cardText": "不含人工添加剂，只保留纯正的自然味道。"
-                },
-                {
-                    "cardTitle": "烹饪简便",
-                    "cardText": "烹饪方便，适合任何饮食结构。"
-                },
-                {
-                    "cardTitle": "储备",
-                    "cardText": "储备"
-                }
-            ]
-        }
+      "heroSection": {
+        "title": "私人企业 «Tender-Agro» 大自然给予，人类索取，我们为所有人保存！",
+        "mainText": "天然的农业食品，精心挑选并科学保存，为您的健康、长寿和幸福服务！大自然的秘密变得触手可及，有助于改善饮食、恢复活力以及预防多种疾病。"
+      },
+      "cardSection": {
+        "title": "为什么选择我们？",
+        "cards": [
+          {
+            "cardTitle": "生态环保",
+            "cardText": "我们的产品采用有机原料制成，无任何化学添加剂。",
+            "cardImg": "./src/shared/assets/img/nature.png"
+          },
+          {
+            "cardTitle": "健康益处",
+            "cardText": "富含大量维生素和矿物质。",
+            "cardImg": "./src/shared/assets/img/health.png"
+          },
+          {
+            "cardTitle": "天然口味",
+            "cardText": "无人工添加剂，仅保留纯净的自然味道。",
+            "cardImg": "./src/shared/assets/img/natural.png"
+          },
+          {
+            "cardTitle": "方便烹饪",
+            "cardText": "易于烹饪，适合任何饮食需求。",
+            "cardImg": "./src/shared/assets/img/cooking.png"
+          },
+          {
+            "cardTitle": "储备",
+            "cardText": "储备",
+            "cardImg": "./src/shared/assets/img/nature.png"
+          }
+        ]
+      }
     }
-}
+  }
