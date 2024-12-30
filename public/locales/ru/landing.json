@@ -8,23 +8,28 @@
             "cards":[{
                 "cardTitle": "Экологичность",
                 "cardText":
-                  "Наш продукт производится из органическего сырья, без добавления химикатов"
+                  "Наш продукт производится из органическего сырья, без добавления химикатов",
+                "cardImg": "./src/shared/assets/img/nature.png"
               },
               {
                 "cardTitle": "Польза для здоровья",
-                "cardText": "Содержит большое количество витаминов и минералов."
+                "cardText": "Содержит большое количество витаминов и минералов.",
+                "cardImg": "./src/shared/assets/img/health.png"
               },
               {
                 "cardTitle": "Натуральный вкус",
-                "cardText": "Никаких искусственных добавок, только чистый вкус природы."
+                "cardText": "Никаких искусственных добавок, только чистый вкус природы.",
+                "cardImg": "./src/shared/assets/img/natural.png"
               },
               {
                 "cardTitle": "Легкость в приготовлении",
-                "cardText": "Быстро готовится и подходит для любого рациона."
+                "cardText": "Быстро готовится и подходит для любого рациона.",
+                "cardImg": "./src/shared/assets/img/cooking.png"
               },
               {
                 "cardTitle": "Резерв",
-                "cardText": "Резерв"
+                "cardText": "Резерв",
+                "cardImg": "./src/shared/assets/img/nature.png"
               }
             ]
         }

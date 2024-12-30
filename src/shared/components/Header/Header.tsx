@@ -29,7 +29,7 @@ const Header = ({ buttonTitle, buttonHandle }: HeaderProps) => {
 
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <button
-            className="px-5 py-2 bg-blue-500 text-white border border-blue-500 rounded-lg hover:bg-blue-600 transition duration-200"
+            className="px-5 py-1.5 bg-blue-500 text-white border border-blue-500 rounded-lg hover:bg-blue-600 transition duration-200"
             onClick={buttonHandle}
           >
             {buttonTitle}

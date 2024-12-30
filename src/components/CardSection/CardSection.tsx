@@ -40,7 +40,9 @@ const CardSection = () => {
             </div>
 
             <div className="flex w-1/2 flex-col md:flex-row items-center justify-center md:gap-10">
-              <div className="bg-gray-200 h-64 w-full mb-6 md:mb-0"></div>
+              <div className="h-64 w-1/2 mb-6 md:mb-0 align-center">
+                <img src={cardsData[currentIndex]?.cardImg} alt="card" />
+              </div>
               <div className="w-full sm:w-2/3 text-center md:text-left">
                 <h2 className="text-2xl font-semibold">
                   {cardsData[currentIndex]?.cardTitle}
